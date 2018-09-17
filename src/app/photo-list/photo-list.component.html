@@ -1,3 +1,11 @@
-<h2>{{photo.title}}</h2>
-<h5>{{photo.date}}</h5>
-<p>Image pending</p>
+<h2>List of Photos</h2>
+<ul class='photos'>
+    <li *ngFor='let photo of photos' (click)='onSelect(photo)'>
+        <span>{{photo.title}}</span>
+        <span>{{photo.date}}</span>
+    </li>
+</ul>
+
+<div class='selected' *ngIf='selectedPhoto'>
+    <div>You selected {{selectedPhoto.title}}</div>
+</div>
