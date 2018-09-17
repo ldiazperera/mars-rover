@@ -1,5 +1,26 @@
 .selected {
-    background-color: #CFD8DC !important;
+    background-color: #53e07e !important;
+    color: white;
+}
+
+.photosTitle {
+    display: 'inline-block';
+}
+
+.addPhoto {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    width: 100px;
+    padding: .3em 0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.addPhoto:hover {
+    background-color: #BBD8DC !important;
     color: white;
 }
 
