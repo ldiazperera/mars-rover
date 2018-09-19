@@ -1,8 +1,8 @@
 <h2 class='photosTitle'>List of Photos</h2>
-<button class='addPhoto'>Add Photo</button>
+<button class='addPhoto' (click)='getRandomPhoto();'>Random Photo</button>
 
 <ul class='photos'>
-    <li *ngFor='let photo of photos' (click)='onSelect(photo)'>
+    <li *ngFor='let photo of photos' (click)='onSelect(photo)' [ngClass]="{isSelected: isSelectedPhoto(photo)}">
         <span>{{photo.title}}</span>
         <span>{{photo.date}}</span>
     </li>

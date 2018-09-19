@@ -3,6 +3,11 @@
     color: white;
 }
 
+.isSelected {
+    background-color: #CFD8DC !important;
+    color: white;
+}
+
 .photosTitle {
     display: 'inline-block';
 }

@@ -7,13 +7,15 @@ import { PhotoComponent } from './photo/photo.component';
 import { PhotoListComponent } from './photo-list/photo-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PhotoComponent,
-    PhotoListComponent
+    PhotoListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
